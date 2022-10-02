@@ -33,13 +33,32 @@
           <a href="#services">Services</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact" class="cta-header">Contact</a>
         </nav>
       </div>
     </header>
     <main>
       <section class="home" id="home">
-        <h2>Home</h2>
+        <article
+          class="hero-image"
+          style="
+            --image: url(https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+            --attachment: fixed;
+          "
+        >
+          <aside
+            class="hero-image-opacity"
+            style="--opacity-color: var(--black-alpha)"
+          >
+            <div class="hero-image-content">
+              <h2 class="hero-image-title">
+                Welcome <br />
+                to my website
+              </h2>
+              <a href="#contact" class="btn">Contact me</a>
+            </div>
+          </aside>
+        </article>
       </section>
       <section class="about" id="about">
         <h2>About</h2>
