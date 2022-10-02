@@ -1,0 +1,131 @@
+/* Custom Properties */
+:root {
+  --color-primary: #358cb2;
+  --color-secondary: #ffbd59;
+  --black: #1a191a;
+  --white: #fff;
+  --aqua: #248080;
+  --gold: #7e7334;
+  --white-alpha: rgba(255, 255, 255, 0.5);
+  --black-alpha: rgba(0, 0, 0, 0.5);
+  --font: "Poppins", sans-serif;
+  --max-width: 1200px;
+  --header-height: 6rem;
+}
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--black);
+  color: var(--white);
+  /* overflow-x: hidden; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Components */
+
+/* Menu */
+.menu-btn {
+  font-size: 3rem;
+  border: none;
+  background-color: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  /* height: calc(100vh - var(--header-height)); */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu a {
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: var(--color-primary);
+}
+
+/* Utilities */
+
+.box-shadow {
+  box-shadow: 4px 4px 1.6rem rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.none {
+  display: none;
+}
+
+/* Site Styles */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--black);
+  z-index: 999;
+  border-bottom: var(--color-primary) 0.2rem solid;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+/* https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80 */
