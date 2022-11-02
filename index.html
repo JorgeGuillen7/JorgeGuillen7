@@ -51,8 +51,8 @@
           >
             <div class="hero-image-content">
               <h2 class="hero-image-title">
-                Welcome <br />
-                to my website
+                Hi, I'm Amauri<br />
+                Welcome to my website
               </h2>
               <a href="#contact" class="btn">Contact me</a>
             </div>
@@ -91,6 +91,7 @@
               href="https://drive.google.com/file/d/1Stq4j0GBoYmSBi3hnYOqH4KXmda6zWMa/view?usp=sharing"
               class="btn"
               target="_blank"
+              rel="noopener"
               rel="noopener"
               >Download CV</a
             >
@@ -239,7 +240,10 @@
               itaque.
             </p>
             <div class="project-links">
-              <a href="https://amauridev.me/YardSale" target="_blank"
+              <a
+                href="https://amauridev.me/YardSale"
+                target="_blank"
+                rel="noopener"
                 ><i class="bi bi-hearts"></i>Demo</a
               >
               <a href=""><i class="bi bi-hearts"></i>GitHub</a>
@@ -266,7 +270,10 @@
               itaque.
             </p>
             <div class="project-links">
-              <a href="https://amauridev.me/ToDoApp" target="_blank"
+              <a
+                href="https://amauridev.me/ToDoApp"
+                target="_blank"
+                rel="noopener"
                 ><i class="bi bi-hearts"></i>Demo</a
               >
               <a href=""><i class="bi bi-hearts"></i>GitHub</a>
@@ -296,7 +303,10 @@
               itaque.
             </p>
             <div class="project-links">
-              <a href="https://amauridev.me/YardSale" target="_blank"
+              <a
+                href="https://amauridev.me/YardSale"
+                target="_blank"
+                rel="noopener"
                 ><i class="bi bi-hearts"></i>Demo</a
               >
               <a href=""><i class="bi bi-hearts"></i>GitHub</a>
@@ -323,7 +333,10 @@
               itaque.
             </p>
             <div class="project-links">
-              <a href="https://amauridev.me/ToDoApp" target="_blank"
+              <a
+                href="https://amauridev.me/ToDoApp"
+                target="_blank"
+                rel="noopener"
                 ><i class="bi bi-hearts"></i>Demo</a
               >
               <a href=""><i class="bi bi-hearts"></i>GitHub</a>
@@ -353,7 +366,10 @@
               itaque.
             </p>
             <div class="project-links">
-              <a href="https://amauridev.me/YardSale" target="_blank"
+              <a
+                href="https://amauridev.me/YardSale"
+                target="_blank"
+                rel="noopener"
                 ><i class="bi bi-hearts"></i>Demo</a
               >
               <a href=""><i class="bi bi-hearts"></i>GitHub</a>
@@ -380,7 +396,10 @@
               itaque.
             </p>
             <div class="project-links">
-              <a href="https://amauridev.me/ToDoApp" target="_blank"
+              <a
+                href="https://amauridev.me/ToDoApp"
+                target="_blank"
+                rel="noopener"
                 ><i class="bi bi-hearts"></i>Demo</a
               >
               <a href=""><i class="bi bi-hearts"></i>GitHub</a>
@@ -388,14 +407,103 @@
           </div>
         </div>
       </article>
-
-      <section class="section contact" id="contact">
-        <h2>Contact</h2>
-      </section>
     </main>
 
     <footer class="footer">
-      <small> Sitio diseñado por <b>@amauridev</b></small>
+      <section class="section contact" id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form">
+          <div class="contact-form-description">
+            <h3>Get in touch</h3>
+            <p>
+              Send a general message or details of a project you'd like me to be
+              a part of and I'll get back to you as soon as possible.
+            </p>
+          </div>
+          <input
+            type="text"
+            name="name"
+            class="contact-form-name"
+            placeholder="Enter your name*"
+            title="Only letters and white spaces"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="contact-form-email"
+            placeholder="Enter your email*"
+            title="Email not valid"
+            pattern="^[a-z0-9]+([-_\.]*[a-z0-9])+@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+            required
+          />
+          <textarea
+            name="message"
+            cols="50"
+            rows="10"
+            class="contact-form-message"
+            placeholder="Enter your message*"
+            required
+          ></textarea>
+          <div class="contact-form-loader none">
+            <img src="./assets/img/loader.svg" alt="loading..." />
+          </div>
+          <input class="btn" type="submit" value="Send message" />
+        </form>
+        <article class="modal" id="thanks">
+          <div class="modal-content">
+            <article class="contact-form-response">
+              <h3>
+                Thanks! <br />
+                For your message
+              </h3>
+              <i class="bi bi-emoji-smile-fill"></i>
+            </article>
+          </div>
+        </article>
+        <article class="contact-cards">
+          <div class="contact-card">
+            <i class="bi bi-hearts"></i>
+            <h5>LinkedIn</h5>
+            <small
+              ><a
+                href="https://linkedin.com/in/amauridev"
+                target="_blank"
+                rel="noopener"
+                >@amauridev</a
+              ></small
+            >
+          </div>
+          <div class="contact-card">
+            <i class="bi bi-hearts"></i>
+            <h5>GitHub</h5>
+            <small
+              ><a
+                href="https://github.com/itsamauridev"
+                target="_blank"
+                rel="noopener"
+                >@itsamauridev</a
+              ></small
+            >
+          </div>
+          <div class="contact-card">
+            <i class="bi bi-hearts"></i>
+            <h5>Email</h5>
+            <small
+              ><a href="mailto:info@amauridev.me">info@amauridev.me</a></small
+            >
+          </div>
+          <div class="contact-card">
+            <i class="bi bi-hearts"></i>
+            <h5>Phone</h5>
+            <small><a href="tel:+525561269181">(+52) 55 6126 9181</a></small>
+            <!-- <h5>Location</h5>
+              <small>Mexico City, Mexico</small> -->
+          </div>
+        </article>
+        <small class="footer-info"> Sitio diseñado por <b>@amauridev</b></small>
+      </section>
     </footer>
     <script src="./script.js"></script>
   </body>
