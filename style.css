@@ -386,6 +386,12 @@ p {
   background-color: var(--color-secondary);
 }
 
+.skills-item svg {
+  height: 50%;
+  width: fit-content;
+  fill: var(--white);
+}
+
 /* Utilities */
 .btn {
   display: inline-block;
