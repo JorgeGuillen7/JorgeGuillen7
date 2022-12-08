@@ -278,6 +278,10 @@ p {
   align-items: center;
 }
 
+.modal-close svg {
+  fill: var(--black);
+}
+
 .modal-content img {
   aspect-ratio: 5 / 4;
   object-fit: cover;
@@ -313,7 +317,7 @@ p {
 .project-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .project-links a {
@@ -331,9 +335,17 @@ p {
   line-height: 1.6;
 }
 
+.project-links a {
+  fill: var(--black);
+}
+
 .project-links a:last-child {
   background-color: var(--black);
   color: var(--purple);
+}
+
+.project-links a:last-child svg {
+  fill: var(--purple);
 }
 
 @media screen and (min-width: 640px) {
@@ -623,6 +635,7 @@ p {
 .project-card img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: top;
 }
 
 .project-card-info {
